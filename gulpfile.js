@@ -15,6 +15,7 @@ var bodyParser = require('body-parser'),
     paths = {
         assets: 'assets/',
         html: '**/*.html',
+        json: '**/*.json',
         jpg: 'img/**/*.jpg',
         png: 'img/**/*.png',
         fonts: 'fonts/**/*.ttf',
@@ -26,6 +27,7 @@ var bodyParser = require('body-parser'),
     sources = {
         assets: config.source + paths.assets,
         html: config.source + paths.html,
+        json: config.source + paths.json,
         jpg: config.source + paths.assets + paths.jpg,
         png: config.source + paths.assets + paths.png,
         fonts: config.source + paths.assets + paths.fonts,
@@ -39,7 +41,7 @@ var bodyParser = require('body-parser'),
     };
 
 gulp.task('html', () => {
-    gulp.src(sources.html)
+    gulp.src([sources.html, sources.json])
         .pipe(gulp.dest(config.dist));
 });
 
@@ -102,7 +104,7 @@ gulp.task('serve', () => {
             baseDir: config.dist
         }
     });
-    gulp.watch(sources.html, ['html-watch']);
+    gulp.watch([sources.html, sources.json], ['html-watch']);
     gulp.watch([sources.SASS], ['sass-watch']);
     gulp.watch([sources.jpg, sources.png], ['img-watch']);
     gulp.watch([sources.fonts], ['fonts-watch']);
