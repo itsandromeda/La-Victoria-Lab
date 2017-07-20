@@ -13,7 +13,46 @@ const schedule = () => {
                                     <p>Oeschle</p>
                                 </div>
                             </div>
-                         </header>`);
+                         </header>
+                         <section class="schedule-wrap">
+                            <div class="container">
+                                <div class="row">
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>15:00</p>
+                                        <p>What is Digital Transformation</p>
+                                        <p>Mike Bracken</p>
+                                        <div>
+                                            <i class="fa fa-location"></i>
+                                            <p>Carpa Mixta</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p>15:00</p>
+                                        <p>What is Digital Transformation</p>
+                                        <p>Mike Bracken</p>
+                                        <div>
+                                            <i class="fa fa-location"></i>
+                                            <p>Carpa Mixta</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p>15:00</p>
+                                        <p>What is Digital Transformation</p>
+                                        <p>Mike Bracken</p>
+                                        <div>
+                                            <i class="fa fa-location"></i>
+                                            <p>Carpa Mixta</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         </section>
+                         <footer>
+                            <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
+                         </footer>`);
 
     return container;
 };
