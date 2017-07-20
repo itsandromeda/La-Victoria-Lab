@@ -1,0 +1,39 @@
+{
+  "name": "myfest17",
+  "version": "1.0.0",
+  "description": "Talent Fest La Victoria Lab Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsandromeda/La-Victoria-Lab.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Firebase",
+    "Gulp",
+    "SASS"
+  ],
+  "author": "La Victoria Lab Crew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsandromeda/La-Victoria-Lab/issues"
+  },
+  "homepage": "https://github.com/itsandromeda/La-Victoria-Lab#readme",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

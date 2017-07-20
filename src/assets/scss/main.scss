@@ -1,0 +1,26 @@
+/*
+    =======================
+    Personal Portfolio
+    Author: Annia J. Flores
+    Version: 1.0.0
+    =======================
+*/
+
+
+/* BASE - Base styles, variables, mixins, etc. */
+
+@import '0-base/_base.scss';
+@import '0-base/_mixins.scss';
+@import '0-base/_variables.scss';
+
+/* MODULES - Individual site components */
+
+@import '1-modules/_buttons.scss';
+@import '1-modules/_typography.scss';
+
+/* LAYOUTS - Page layout styles */
+
+@import '2-layouts/_header.scss';
+h1 {
+    color: red !important;
+}
