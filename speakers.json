@@ -1,0 +1,155 @@
+[
+    {
+        "speaker_id" : "s1",
+        "speaker_name": "Mike Bracken",
+        "speaker_jobtitle": "Partner & Chief Digital Officer",
+        "speaker_company": "Public Digital (Ex GDS)",
+        "speaker_bio": "Socio en Public Digital, una consultora encargada de la transformación de gobiernos e instituciones públicas. Fue responsable de supervisar los servicios públicos digitales del gobierno del Reino Unido. Antes de unirse al gobierno, Mike trabajó en Guardian News & Media como Director de Desarrollo Digital por casi cuatro años."
+    },
+    {
+        "speaker_id" : "s2",
+        "speaker_name": "Beatriz Lara",
+        "speaker_jobtitle": "Former Director of Corporate Transformation ",
+        "speaker_company": "Imersivo (Ex BBVA)",
+        "speaker_bio": "Beatriz trabajó en telecomunicaciones antes de unirse a BBVA, donde fue Chief Innovation Officer por muchos años y luego Directora de Transformación Corporativa hasta el 2015. Trabajó con IDEO para diseñar 'el futuro del autoservicio bancario', incluyendo un cajero ganador de muchos premios que ahora está exhibido en el MOMA."
+    },
+    {
+        "speaker_id" : "s3",
+        "speaker_name": "Luis Cilimingras",
+        "speaker_jobtitle": "Managing Director",
+        "speaker_company": "IDEO",
+        "speaker_bio": "Managing Director en IDEO Londres. Le apasiona cómo las organizaciones adoptan la creatividad para crecer. Con más de seis años en IDEO, ha liderado proyectos en temas vinculados a movilidad, retail y salud. El año pasado regresó de un año en Perú, donde co-fundó La Victoria Lab y duplicó el tamaño de su familia. "
+    },
+    {
+        "speaker_id" : "s4",
+        "speaker_name": "Jake Barton",
+        "speaker_jobtitle": "Principal & Founder",
+        "speaker_company": "Local Projects",
+        "speaker_bio": "Fundador de Local Projects, una empresa de medios y 'physical design' creadora de experiencias innovadoras. Local Projects ha ganado todos los premios importantes, incluyendo los National Design Awards. Su charla de TED tiene casi un millón de visitas y se encuentra en la lista de los mejores 50 diseñadores de la revista Fast Company."
+    },
+    {
+        "speaker_name": "Wouter De Bie",
+        "speaker_jobtitle": "Data Architect",
+        "speaker_company": "Spotify",
+        "speaker_bio": "Arquitecto de datos en Spotify, dónde construye la siguiente iteración de la plataforma 'big data'. Inició su carrera en Linux como consultor en los Países Bajos. En el 2009, trabajó como desarrollador de Ruby y como administrador de sistemas en Delta Projects, una de las empresas de anuncios on-line más grandes de Suecia."
+    },
+    {
+        "speaker_name": "Mike Bracken",
+        "speaker_jobtitle": "Partner & Chief Digital Officer",
+        "speaker_company": "Public Digital (Ex GDS)",
+        "speaker_bio": "Socio en Public Digital, una consultora encargada de la transformación de gobiernos e instituciones públicas. Fue responsable de supervisar los servicios públicos digitales del gobierno del Reino Unido. Antes de unirse al gobierno, Mike trabajó en Guardian News & Media como Director de Desarrollo Digital por casi cuatro años."
+    },
+    {
+        "speaker_name": "Fernando Soriano",
+        "speaker_jobtitle": "CEO",
+        "speaker_company": "Cineplanet",
+        "speaker_bio": "Administrador de empresas con un MBA de la Universidad Adolfo Ibáñez de Chile. Cuenta con diez años de experiencia en Cineplanet viendo temas vinculados a operaciones, ventas y liderazgo. Antes de convertirse en CEO, se desempeñó como Gerente de Operaciones por tres años."
+    },
+    {
+        "speaker_name": "Divya Viswanathan",
+        "speaker_jobtitle": "Design Research Lead",
+        "speaker_company": "IDEO",
+        "speaker_bio": "Divya es Design Research Lead en IDEO San Francisco y le apasiona colmar la brecha entre personas y soluciones. En IDEO, ha trabajado para empresas como Google, VF Corporation y Sony, convirtiendo las necesidades explícitas e implícitas de las personas en productos y servicios centrados en el consumidor."
+    },
+    {
+        "speaker_name": "Mario Fiocco",
+        "speaker_jobtitle": "Director de Marcas Propias",
+        "speaker_company": "Inkafarma",
+        "speaker_bio": "Ingeniero Industrial de la Universidad de Lima con un MBA de Cornell University. Maneja el negocio de Marcas Exclusivas, el área de Category Management y de Business Intelligence, así como proyectos de transformación, en Inkafarma. Anteriormente trabajó en Procter & Gamble y en Alicorp."
+    },
+    {
+        "speaker_name": "Anjali Kumar",
+        "speaker_jobtitle": "Former Head of Social Innovation",
+        "speaker_company": "Ex Warby Parker",
+        "speaker_bio": "Anjali es socia fundadora y ex directora de Innovación Social en Warby Parker, profesora adjunta de la Escuela de Negocios de Columbia, y asesora de empresas de tecnología, moda, productos de consumo, celebridades y ONGs. Ayudó a formar el 'Malala Fund' tras los ataques a Malala Yousafzai."
+    },
+    {
+        "speaker_name": "Fernanda Saboia",
+        "speaker_jobtitle": "Senior Product Strategist",
+        "speaker_company": "Huge",
+        "speaker_bio": "Encargada de Estrategia en Huge, donde trabaja desarrollando negocios, productos y estrategias de redes sociales para sus clientes más importantes. Ha trabajado más de seis años en experiencias digitales y es egresada de la PUC-Rio en Comunicación y Marketing. Entre sus clientes se encuentran Vale, Rock in Rio y Coca-Cola."
+    },
+    {
+        "speaker_name": "Alejandro Rey",
+        "speaker_jobtitle": "Gerente Canales Digitales TI",
+        "speaker_company": "Interbank",
+        "speaker_bio": "Trabajó durante 15 años en la industria de semiconductores en Silicon Valley y en dos start-ups. En Interbank, ayuda a desarrollar productos utilizando Scrum. Estudió Ingeniería de Sistemas (Universidad de Boston) y tiene un MBA (San Jose State University)."
+    },
+    {
+        "speaker_name": "Rachel Brooks",
+        "speaker_jobtitle": "Digital Product Leader",
+        "speaker_company": "Thoughtworks",
+        "speaker_bio": "Líder de Productos Digitales en ThoughtWorks con un enfoque en crear experiencias físicas y digitales para organizaciones empresariales y start-ups. Fue fundadora de la compañía de ecommerce Citizen Made, la cual permite a marcas y creadores vender productos personalizados en línea. "
+    },
+    {
+        "speaker_name": "Kenneth Lopez",
+        "speaker_jobtitle": "CEO",
+        "speaker_company": "Tekton Labs",
+        "speaker_bio": "Emprendedor, fundador y CEO de Tekton Labs, una empresa dedicada a la comunicación digital estratégica y a proveer soluciones de software. Empezó a programar a los 13 años y estudió Ingeniería de Sistemas en la Universidad Católica del Perú (PUCP). "
+    },
+    {
+        "speaker_name": "Martin Alfieri",
+        "speaker_jobtitle": "Program Manager",
+        "speaker_company": "Belatrix",
+        "speaker_bio": "Martín se mudó a Perú para el lanzamiento de la nueva oficina Belatrix, donde se desempeña como Program Manager. Fue desarrollador .NET en Volkswagen Argentina, Siemens y Capgemini. Ha trabajado en España e India como Líder de Equipo y estudió Ingeniería de Sistemas en la Universidad Tecnológica Nacional en Buenos Aires. "
+    },
+    {
+        "speaker_name": "Paulo Caroli",
+        "speaker_jobtitle": "Principal Consultant",
+        "speaker_company": "Thoughtworks",
+        "speaker_bio": "Paulo Caroli es el autor de 'Directo al Punto: Una guía para la creación de productos Lean' (el primero de una serie de libros sobre Lean MVP). Él es también el creador de FunRetrospectives.com, un sitio y libro sobre retrospectivas, futurospectivas y actividades de team building."
+    },
+    {
+        "speaker_name": "Adrián Breitburd",
+        "speaker_jobtitle": "Chief Architect",
+        "speaker_company": "Globant",
+        "speaker_bio": "Acumula más de 20 años de especialización en arquitecturas escalables y tolerantes a fallas, dirigiendo proyectos de diseño e implementación para clientes como Google, BBVA, TD Ameritrade y  Electronics Arts. Actualmente es Chief Architect en Globant."
+    },
+    {
+        "speaker_name": "Edgar Helou",
+        "speaker_jobtitle": "Director Google for Work Colombia",
+        "speaker_company": "Google",
+        "speaker_bio": "Edgar Helou es Gerente de Google for Work para Colombia y es Físico e Ingeniero Eléctrico de la Universidad de los Andes. Ha trabajado 15 años en pensar cómo la tecnología puede transformar organizaciones públicas y privadas. Su misión es imaginar, construir y transformar."
+    },
+    {
+        "speaker_name": "Alessandra Corrochano",
+        "speaker_company": "Labentana",
+        "speaker_bio": "Trabaja en Labentana, laboratorio de innovación de Interbank, liderando proyectos que usan metodologías centradas en la personas. Previamente fue gerente de proyectos en Altair Management Consultants, consultora estratégica en España. Tiene un MBA del instituto de Empresas y es economista de la Universidad del Pacifico."
+    },
+    {
+        "speaker_name": "Elena Gianni",
+        "speaker_jobtitle": "Lead Product Designer",
+        "speaker_company": "The New York Times",
+        "speaker_bio": "Trabaja en The New York Times liderando el replanteamiento del home page en todas sus plataformas. Formó parte del equipo a cargo del 'Innovation Report', un documento que busca repensar el futuro del Times. Con una formación en Ingeniería, Media Studies e Interaction Design, Elena se enfoca en crear culturas de innovación."
+    },
+    {
+        "speaker_name": "Juan Peñarrieta",
+        "speaker_jobtitle": "Tech Product Manager",
+        "speaker_company": "Tech Product Manager",
+        "speaker_bio": "Senior Product Manager en Amazon, encargado de desarrollar proyectos de inteligencia artificial para 'Alexa Experience and Devices' y plataformas de pago online para 'Login and Pay with Amazon'. Juan co-fundó el grupo de inversionistas Angeles 'Grupo Incapital' y trabajó en Boston Consulting Group y Real Time Management. "
+    },
+    {
+        "speaker_name": "Santiago Vargas",
+        "speaker_jobtitle": "Program Manager",
+        "speaker_company": "Microsoft",
+        "speaker_bio": "Santiago se dedica a implementar la cadena de suministros inversa para nuevos productos electrónicos. Antes de unirse a Microsoft, trabajó en la sede de Apple en California. Tiene un MBA de la Universidad de Michigan y estudió Ingeniería Industrial en la Universidad de Lima."
+    },
+    {
+        "speaker_name": "Toni Del Rio",
+        "speaker_jobtitle": "Product and Experience Builder",
+        "speaker_company": "Product and Experience Builder",
+        "speaker_bio": "Trabaja en proyectos relacionados con Human-Computer Interaction, Inteligencia Artificial y automatización en Amazon.com. Antes de trabajar en Amazon, formó parte de Disney Imagineering y trabajó en Latinoamérica por diez años en Procter & Gamble como 'Brand Manager and Innovation Leader' para mercados de bajos ingresos."
+    },
+    {
+        "speaker_name": "Sina Mossayeb",
+        "speaker_jobtitle": "System Design Lead",
+        "speaker_company": "IDEO",
+        "speaker_bio": "Sina trabaja en el desarrollo de movimientos sociales bajo una óptica interdisciplinaria y es consultor de proyectos vinculados al diseño de campañas en IDEO. Tiene un enfoque en impacto social y cambio organizacional, basándose en una estrategia centrada en las personas. "
+    },
+    {
+        "speaker_name": "Beatriz Lara",
+        "speaker_jobtitle": "Former Director of Corporate Transformation ",
+        "speaker_company": "Imersivo (Ex BBVA)",
+        "speaker_bio": "Beatriz trabajó en telecomunicaciones antes de unirse a BBVA, donde fue Chief Innovation Officer por muchos años y luego Directora de Transformación Corporativa hasta el 2015. Trabajó con IDEO para diseñar 'el futuro del autoservicio bancario', incluyendo un cajero ganador de muchos premios que ahora está exhibido en el MOMA."
+    }
+]

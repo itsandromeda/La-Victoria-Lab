@@ -1,0 +1,24 @@
+{
+    "users": {
+        "57097723": {
+            "user_company": "INTERBANK",
+            "user_lastname": "ABUGATTAS",
+            "user_name": "SAMIR"
+        },
+        "51603663": {
+            "user_company": "SPSA",
+            "user_lastname": "ABUGATTAS",
+            "user_name": "EDUARDO"
+        }
+    },
+    "charlas": {
+        "A1": {
+            "nombre": "charla tela",
+            "speaker_id": "s1"
+        },
+        "B1": {
+            "nombre": "charla tela2",
+            "speaker_id": "s2"
+        }
+    }
+}
