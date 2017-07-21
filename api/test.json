@@ -1,0 +1,435 @@
+{
+    "users": {
+        "57097723": {
+            "user_company": "INTERBANK",
+            "user_lastname": "ABUGATTAS",
+            "user_name": "SAMIR"
+        },
+        "51603663": {
+            "user_company": "SPSA",
+            "user_lastname": "ABUGATTAS",
+            "user_name": "EDUARDO"
+        },
+        "50058763": {
+            "user_company": "FINANCIERA UNO",
+            "user_lastname": "ACOSTA",
+            "user_name": "CARLA"
+        },
+        "54363793":{
+            "user_company": "GRUPO UTP",
+            "user_lastname": "ACOSTA",
+            "user_name": "MARIELA"
+        },
+        "50219243":{
+            "user_company": "CASA ANDINA",
+            "user_lastname": "ADUM",
+            "user_name": "LORENA"
+        },
+        "50551053":{
+            "user_company": "INTRALOT",
+            "user_lastname": "AGÜERO",
+            "user_name": "SANDRA"
+        },
+        "56389183":{
+            "user_company": "UCIC",
+            "user_lastname": "AGÜERO",
+            "user_name": "LOURDES"
+        },
+        "50819223":{
+            "user_company": "INKAFARMA",
+            "user_lastname": "AGUIRRE",
+            "user_name": "ANA ROSA"
+        },
+        "55631183":{
+            "user_company": "INNOVA SCHOOLS",
+            "user_lastname": "AGUIRRE",
+            "user_name": "ELISA"
+        },
+        "55429423":{
+            "user_company": "INTERBANK",
+            "user_lastname": "AGUIRRE",
+            "user_name": "CLAUDIA"
+        }
+    },
+    "talks": {
+        "A1": {
+            "tent": "user",
+            "name": "La implementación del proyecto Chaplin",
+            "description": "¿Cómo podríamos reinventar la experiencia de ir al cine? En el 2014 Cineplanet empezó un proceso de transformación que puso al usuario al centro su experiencia. A un año de la inauguración del nuevo formato de cines, Fernando compartirá los retos y aprendizajes de implementar e iterar el proyecto.",
+            "speakers": ["s6"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "9:00",
+                "finish": "10:00"
+            }
+        },
+        "A2": {
+            "tent": "tech",
+            "name": "Google for Work",
+            "description": "Cloud Computing está cambiando la forma cómo trabajamos y entregamos productos y servicios. Edgar compartirá cómo la plataforma de Cloud de Google ayuda a las organizaciones a colaborar internamente, pero también a construir productos que son más inteligentes.",
+            "speakers": ["s17"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "9:00",
+                "finish": "10:00"
+            }
+        },
+        "A3": {
+            "tent": "org",
+            "name": "Antes de Innovar: lo que hubiese querido saber",
+            "description": "",
+            "speakers": ["s18"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "9:00",
+                "finish": "10:00"
+            }
+        },
+        "A4": {
+            "tent": "principal",
+            "name": "Transformación digital a gran escala",
+            "description": "Durante los últimos años, Beatriz ha liderado la transformación digital del programa corporativo del BBVA, un viaje que más que implementar tecnología, ha cambiado la 'forma de hacer las cosas' en una organización de más de 110,000 personas.",
+            "speakers": ["s2"],
+            "seating": 230,
+            "reserved": 0,
+            "schedule": {
+                "start": 9,
+                "finish": 10
+            }
+        },
+        "B1": {
+            "tent": "user",
+            "name": "Designing for Digital Confidence",
+            "description": "¿Cómo podríamos comprender las actitudes y comportamientos de los jóvenes peruanos en el ámbito digital? Partiendo de una investigación realizada por La Victoria Lab, IDEO y Labentana, Divya compartirá insights sobre el desafío de diseñar productos digitales para una nueva generación.",
+            "speakers": ["s7"],
+            "seating": 145,
+            "reserved": 0,
+            "schedule": {
+                "start": "10:30",
+                "finish": "11:30"
+            }
+        },
+        "B2": {
+            "tent": "tech",
+            "name": "Todo lo que siempre quisiste saber sobre Agile",
+            "description": "El desarrollo de software ágil puede ser confuso. ¿Es más costoso? ¿Es más riesgoso? ¿Cómo se maneja? ¿Cómo logras que las personas lo adopten? Interbank ha estado respondiendo estas preguntas y comprometiendo a los actores claves para crear su propia versión de una cultura ágil.",
+            "speakers": ["s11"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "10:30",
+                "finish": "11:30"
+            }
+        },
+        "B3": {
+            "tent": "org",
+            "name": "Building the future of The New York Times",
+            "description": "New York Times ha estado trabajando agresivamente para transformarse a medida que el internet ha cambiado cómo los usarios acceden a noticias. Según Elena, el diseño y la colaboración han sido centrales para crear nuevos productos innovadores. a través de su nueva unidad Beta.",
+            "speakers": ["s19"],
+            "seating": 140,
+            "reserved": 0,
+            "schedule": {
+                "start": "10:30",
+                "finish": "11:30"
+            }
+        },
+        "B4": {
+            "tent": "principal",
+            "name": "Todo comienza con Service Design",
+            "description": "La mejor oportunidad que ofrece la transformación digital es crear una experiencia única del consumidor. Luis compartirá con nosotros cómo Amazon, Uber y Airbnb crean una experiencia del consumidor que siempre está mejorando gracias a una herramienta muy simple: el diseño de servicios.",
+            "speakers": ["s3"],
+            "seating": 230,
+            "reserved": 0,
+            "schedule": {
+                "start": "10:30",
+                "finish": "11:30"
+            }
+        },
+        "C1": {
+            "tent": "user",
+            "name": "Cómo Inkafarma compite consigo mismo digitalmente",
+            "description": "Inkafarma decidió iniciar su transformación digital construyendo un producto. El viaje desde la decisión de qué proyecto abordar hasta el lanzamiento de un MVP (Producto Viable Mínimo) ha sido uno de mucho estrés y ansiedad, pero también de crecimiento y aprendizaje.",
+            "speakers": ["s8"],
+            "seating": 145,
+            "reserved": 0,
+            "schedule": {
+                "start": "12:00",
+                "finish": "13:00"
+            }
+        },
+        "C2": {
+            "tent": "tech",
+            "name": "De agencias digitales a software factories",
+            "description": "Entregar excelentes servicios digitales requiere de excelentes socios. Belatrix, Globant, Tekton Labs y Thoughtworks compartirán su trabajo y enfoque en construir software de clase mundial, utilizando tecnologías modernas y un sistema de desarrollo de software ágil. ",
+            "speakers": ["s12", "s13", "s14", "s16"],
+            "seating": 140,
+            "reserved": 0,
+            "schedule": {
+                "start": "12:00",
+                "finish": "13:00"
+            }
+        },
+        "C3": {
+            "tent": "org",
+            "name": "Product Manager: El rol indispensable en el digital journey",
+            "description": "El Product Manager es el motor para innovar en el ciclo de vida de un producto digital; curiosidad, comunicación e iniciativa son requisitos fundamentales para ser un gran Product Manager. Este grupo de peruanos compartirá sus experiencias de trabajo en Amazon, Apple, Disney y Microsoft.",
+            "speakers": ["s20", "s21", "s22"],
+            "seating": 140,
+            "reserved": 0,
+            "schedule": {
+                "start": "12:00",
+                "finish": "13:00"
+            }
+        },
+        "C4": {
+            "tent": "principal",
+            "name": "Amplifying human experiences through tech",
+            "description": "¿Cómo deberíamos diseñar proyectos que perduren y permanezcan sensibles a la escala humana? Jake compartirá sus experiencias reinventando el espacio público; involucrando a las personas a través de la emoción y la tecnología, y desarrollando nuevas formas de interacción con el arte y las ciudades.",
+            "speakers": ["s4"],
+            "seating": 240,
+            "reserved": 0,
+            "schedule": {
+                "start": "12:00",
+                "finish": "13:00"
+            }
+        },
+        "D1": {
+            "tent": "user",
+            "name": "Trust is the New Black",
+            "description": "Si estás construyendo la siguiente unidad de negocio millonaria o navegando por una industria que está en constante cambio, ¿cuál es el secreto para tener éxito? De acuerdo a Anjali, construir confianza con tus empleados y clientes es fundamental, sin importar cuál sea tu meta.",
+            "speakers": ["s9"],
+            "seating": 140,
+            "reserved": 0,
+            "schedule": {
+                "start": "14:30",
+                "finish": "15:30"
+            }
+        },
+        "D2": {
+            "tent": "tech",
+            "name": "Tecnologia al servicio del negocio",
+            "description": "La tecnología y los negocios han sido tradicionalmente manejados de manera separada; pero las organizaciones necesitan incorporar la tecnología en el centro. Inkafarma ha analizado su arquitectura IT para comprender cómo los sistemas han ayudado —o no— a cumplir sus objetivos.",
+            "speakers": ["s16"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "14:30",
+                "finish": "15:30"
+            }
+        },
+        "D3": {
+            "tent": "org",
+            "name": "Creative Difference: 2016 Results",
+            "description": "Algunos comportamientos organizacionales son comunes en las empresas digitales con el mejor desempeño. Esta herramienta, desarrollada por IDEO para medir progreso en capacidades de innovación, revelará cómo se encuentra cada una de nuestras empresas en relación a las seis competencias creativas.",
+            "speakers": ["s23"],
+            "seating": 145,
+            "reserved": 0,
+            "schedule": {
+                "start": "14:30",
+                "finish": "15:30"
+            }
+        },
+        "D4": {
+            "tent": "principal",
+            "name": "Winning through Data-Driven Strategy",
+            "description": "Una estrategia basada en datos sistémicos es parte del núcleo del viaje de transformación digital. Wouter compartirá con nosotros cómo Spotify crea el mayor valor a partir de sus datos con el fin de generar insights sólidos.",
+            "speakers": ["s5"],
+            "seating": 230,
+            "reserved": 0,
+            "schedule": {
+                "start": "14:30",
+                "finish": "15:30"
+            }
+        },
+        "E1": {
+            "tent": "user",
+            "name": "The Rise of WhatsApp as a CRM Tool in Brazil",
+            "description": "Los usuarios están utilizando apps de mensajería como la principal manera de chatear no solo con amigos, sino también con marcas. Fernanda nos contará cómo usuarios en Brazil utilizan WhatsApp como una solución de ecommerce y una aplicación de servicio de CRM.",
+            "speakers": ["s10"],
+            "seating": 145,
+            "reserved": 0,
+            "schedule": {
+                "start": "16:00",
+                "finish": "17:00"
+            }
+        },
+        "E2": {
+            "tent": "tech",
+            "name": "Products over Projects",
+            "description": "A diferencia de un proyecto con un principio y un fin, un producto digital se itera y mejora todo el tiempo. Las organizaciones tradicionales necesitan desarrollar una cultura ágil en torno a productos digitales para explorar y experimentar con su futuro.",
+            "speakers": ["s15"],
+            "seating": 150,
+            "reserved": 0,
+            "schedule": {
+                "start": "16:00",
+                "finish": "17:00"
+            }
+        },
+        "E3": {
+            "tent": "org",
+            "name": "Org. vs. Tech: ¿Quién manda a quién?",
+            "description": "¿Qué debe cambiar primero: la tecnología o la organización? A medida que las organizaciones se vuelven más digitales, deben prestar más atención a la arquitectura de tecnología que las sostiene, y evaluar una serie de cambios en una y en la otra.",
+            "speakers": ["s2", "s16"],
+            "seating": 140,
+            "reserved": 0,
+            "schedule": {
+                "start": "16:00",
+                "finish": "17:00"
+            }
+        },
+        "E4": {
+            "tent": "principal",
+            "name": "Why Digital Transformation is so hard",
+            "description" : "La transformación digital no es complicada; solo requiere de mucho trabajo. Mike compartirá con nosotros cómo las organizaciones exitosas no solo están implementando la nueva tecnología, pero también adoptando la cultura y las prácticas de la era del Internet.",
+            "speakers": ["s1"],
+            "seating": 230,
+            "reserved": 0,
+            "schedule": {
+                "start": "16:00",
+                "finish": "17:00"
+            }
+        }
+    },
+    "speakers": {
+        "s1":{
+            "speaker_name": "Mike Bracken",
+            "speaker_jobtitle": "Partner & Chief Digital Officer",
+            "speaker_company": "Public Digital (Ex GDS)",
+            "speaker_bio": "Socio en Public Digital, una consultora encargada de la transformación de gobiernos e instituciones públicas. Fue responsable de supervisar los servicios públicos digitales del gobierno del Reino Unido. Antes de unirse al gobierno, Mike trabajó en Guardian News & Media como Director de Desarrollo Digital por casi cuatro años."
+        },
+        "s2":{
+            "speaker_name": "Beatriz Lara",
+            "speaker_jobtitle": "Former Director of Corporate Transformation ",
+            "speaker_company": "Imersivo (Ex BBVA)",
+            "speaker_bio": "Beatriz trabajó en telecomunicaciones antes de unirse a BBVA, donde fue Chief Innovation Officer por muchos años y luego Directora de Transformación Corporativa hasta el 2015. Trabajó con IDEO para diseñar 'el futuro del autoservicio bancario', incluyendo un cajero ganador de muchos premios que ahora está exhibido en el MOMA."
+        },
+        "s3":{
+            "speaker_name": "Luis Cilimingras",
+            "speaker_jobtitle": "Managing Director",
+            "speaker_company": "IDEO",
+            "speaker_bio": "Managing Director en IDEO Londres. Le apasiona cómo las organizaciones adoptan la creatividad para crecer. Con más de seis años en IDEO, ha liderado proyectos en temas vinculados a movilidad, retail y salud. El año pasado regresó de un año en Perú, donde co-fundó La Victoria Lab y duplicó el tamaño de su familia. "
+        },
+        "s4":{
+            "speaker_name": "Jake Barton",
+            "speaker_jobtitle": "Principal & Founder",
+            "speaker_company": "Local Projects",
+            "speaker_bio": "Fundador de Local Projects, una empresa de medios y 'physical design' creadora de experiencias innovadoras. Local Projects ha ganado todos los premios importantes, incluyendo los National Design Awards. Su charla de TED tiene casi un millón de visitas y se encuentra en la lista de los mejores 50 diseñadores de la revista Fast Company."
+        },
+        "s5":{
+            "speaker_name": "Wouter De Bie",
+            "speaker_jobtitle": "Data Architect",
+            "speaker_company": "Spotify",
+            "speaker_bio": "Arquitecto de datos en Spotify, dónde construye la siguiente iteración de la plataforma 'big data'. Inició su carrera en Linux como consultor en los Países Bajos. En el 2009, trabajó como desarrollador de Ruby y como administrador de sistemas en Delta Projects, una de las empresas de anuncios on-line más grandes de Suecia."
+        },
+        "s6":{
+            "speaker_name": "Fernando Soriano",
+            "speaker_jobtitle": "CEO",
+            "speaker_company": "Cineplanet",
+            "speaker_bio": "Administrador de empresas con un MBA de la Universidad Adolfo Ibáñez de Chile. Cuenta con diez años de experiencia en Cineplanet viendo temas vinculados a operaciones, ventas y liderazgo. Antes de convertirse en CEO, se desempeñó como Gerente de Operaciones por tres años."
+        },
+        "s7":{
+            "speaker_name": "Divya Viswanathan",
+            "speaker_jobtitle": "Design Research Lead",
+            "speaker_company": "IDEO",
+            "speaker_bio": "Divya es Design Research Lead en IDEO San Francisco y le apasiona colmar la brecha entre personas y soluciones. En IDEO, ha trabajado para empresas como Google, VF Corporation y Sony, convirtiendo las necesidades explícitas e implícitas de las personas en productos y servicios centrados en el consumidor."
+        },
+        "s8":{
+            "speaker_name": "Mario Fiocco",
+            "speaker_jobtitle": "Director de Marcas Propias",
+            "speaker_company": "Inkafarma",
+            "speaker_bio": "Ingeniero Industrial de la Universidad de Lima con un MBA de Cornell University. Maneja el negocio de Marcas Exclusivas, el área de Category Management y de Business Intelligence, así como proyectos de transformación, en Inkafarma. Anteriormente trabajó en Procter & Gamble y en Alicorp."
+        },
+        "s9":{
+            "speaker_name": "Anjali Kumar",
+            "speaker_jobtitle": "Former Head of Social Innovation",
+            "speaker_company": "Ex Warby Parker",
+            "speaker_bio": "Anjali es socia fundadora y ex directora de Innovación Social en Warby Parker, profesora adjunta de la Escuela de Negocios de Columbia, y asesora de empresas de tecnología, moda, productos de consumo, celebridades y ONGs. Ayudó a formar el 'Malala Fund' tras los ataques a Malala Yousafzai."
+        },
+        "s10":{
+            "speaker_name": "Fernanda Saboia",
+            "speaker_jobtitle": "Senior Product Strategist",
+            "speaker_company": "Huge",
+            "speaker_bio": "Encargada de Estrategia en Huge, donde trabaja desarrollando negocios, productos y estrategias de redes sociales para sus clientes más importantes. Ha trabajado más de seis años en experiencias digitales y es egresada de la PUC-Rio en Comunicación y Marketing. Entre sus clientes se encuentran Vale, Rock in Rio y Coca-Cola."
+        },
+        "s11":{
+            "speaker_name": "Alejandro Rey",
+            "speaker_jobtitle": "Gerente Canales Digitales TI",
+            "speaker_company": "Interbank",
+            "speaker_bio": "Trabajó durante 15 años en la industria de semiconductores en Silicon Valley y en dos start-ups. En Interbank, ayuda a desarrollar productos utilizando Scrum. Estudió Ingeniería de Sistemas (Universidad de Boston) y tiene un MBA (San Jose State University)."
+        },
+        "s12":{
+            "speaker_name": "Rachel Brooks",
+            "speaker_jobtitle": "Digital Product Leader",
+            "speaker_company": "Thoughtworks",
+            "speaker_bio": "Líder de Productos Digitales en ThoughtWorks con un enfoque en crear experiencias físicas y digitales para organizaciones empresariales y start-ups. Fue fundadora de la compañía de ecommerce Citizen Made, la cual permite a marcas y creadores vender productos personalizados en línea."
+        },
+        "s13":{
+            "speaker_name": "Kenneth Lopez",
+            "speaker_jobtitle": "CEO",
+            "speaker_company": "Tekton Labs",
+            "speaker_bio": "Emprendedor, fundador y CEO de Tekton Labs, una empresa dedicada a la comunicación digital estratégica y a proveer soluciones de software. Empezó a programar a los 13 años y estudió Ingeniería de Sistemas en la Universidad Católica del Perú (PUCP)."
+        },
+        "s14":{
+            "speaker_name": "Martin Alfieri",
+            "speaker_jobtitle": "Program Manager",
+            "speaker_company": "Belatrix",
+            "speaker_bio": "Martín se mudó a Perú para el lanzamiento de la nueva oficina Belatrix, donde se desempeña como Program Manager. Fue desarrollador .NET en Volkswagen Argentina, Siemens y Capgemini. Ha trabajado en España e India como Líder de Equipo y estudió Ingeniería de Sistemas en la Universidad Tecnológica Nacional en Buenos Aires."
+        },
+        "s15":{
+            "speaker_name": "Paulo Caroli",
+            "speaker_jobtitle": "Principal Consultant",
+            "speaker_company": "Thoughtworks",
+            "speaker_bio": "Paulo Caroli es el autor de 'Directo al Punto: Una guía para la creación de productos Lean' (el primero de una serie de libros sobre Lean MVP). Él es también el creador de FunRetrospectives.com, un sitio y libro sobre retrospectivas, futurospectivas y actividades de team building."
+        },
+        "s16":{
+            "speaker_name": "Adrián Breitburd",
+            "speaker_jobtitle": "Chief Architect",
+            "speaker_company": "Globant",
+            "speaker_bio": "Acumula más de 20 años de especialización en arquitecturas escalables y tolerantes a fallas, dirigiendo proyectos de diseño e implementación para clientes como Google, BBVA, TD Ameritrade y  Electronics Arts. Actualmente es Chief Architect en Globant."
+        },
+        "s17":{
+            "speaker_name": "Edgar Helou",
+            "speaker_jobtitle": "Director Google for Work Colombia",
+            "speaker_company": "Google",
+            "speaker_bio": "Edgar Helou es Gerente de Google for Work para Colombia y es Físico e Ingeniero Eléctrico de la Universidad de los Andes. Ha trabajado 15 años en pensar cómo la tecnología puede transformar organizaciones públicas y privadas. Su misión es imaginar, construir y transformar."
+        },
+        "s18":{
+            "speaker_name": "Alessandra Corrochano",
+            "speaker_company": "Labentana",
+            "speaker_bio": "Trabaja en Labentana, laboratorio de innovación de Interbank, liderando proyectos que usan metodologías centradas en la personas. Previamente fue gerente de proyectos en Altair Management Consultants, consultora estratégica en España. Tiene un MBA del instituto de Empresas y es economista de la Universidad del Pacifico."
+        },
+        "s19":{
+            "speaker_name": "Elena Gianni",
+            "speaker_jobtitle": "Lead Product Designer",
+            "speaker_company": "The New York Times",
+            "speaker_bio": "Trabaja en The New York Times liderando el replanteamiento del home page en todas sus plataformas. Formó parte del equipo a cargo del 'Innovation Report', un documento que busca repensar el futuro del Times. Con una formación en Ingeniería, Media Studies e Interaction Design, Elena se enfoca en crear culturas de innovación."
+        },
+        "s20":{
+            "speaker_name": "Juan Peñarrieta",
+            "speaker_jobtitle": "Tech Product Manager",
+            "speaker_company": "Amazon",
+            "speaker_bio": "Senior Product Manager en Amazon, encargado de desarrollar proyectos de inteligencia artificial para 'Alexa Experience and Devices' y plataformas de pago online para 'Login and Pay with Amazon'. Juan co-fundó el grupo de inversionistas Angeles 'Grupo Incapital' y trabajó en Boston Consulting Group y Real Time Management."
+        },
+        "s21":{
+            "speaker_name": "Santiago Vargas",
+            "speaker_jobtitle": "Program Manager",
+            "speaker_company": "Microsoft",
+            "speaker_bio": "Santiago se dedica a implementar la cadena de suministros inversa para nuevos productos electrónicos. Antes de unirse a Microsoft, trabajó en la sede de Apple en California. Tiene un MBA de la Universidad de Michigan y estudió Ingeniería Industrial en la Universidad de Lima."
+        },
+        "s22":{
+            "speaker_name": "Toni Del Rio",
+            "speaker_jobtitle": "Product and Experience Builder",
+            "speaker_company": "Amazon",
+            "speaker_bio": "Trabaja en proyectos relacionados con Human-Computer Interaction, Inteligencia Artificial y automatización en Amazon.com. Antes de trabajar en Amazon, formó parte de Disney Imagineering y trabajó en Latinoamérica por diez años en Procter & Gamble como 'Brand Manager and Innovation Leader' para mercados de bajos ingresos."
+        },
+        "s23":{
+            "speaker_name": "Sina Mossayeb",
+            "speaker_jobtitle": "System Design Lead",
+            "speaker_company": "IDEO",
+            "speaker_bio": "Sina trabaja en el desarrollo de movimientos sociales bajo una óptica interdisciplinaria y es consultor de proyectos vinculados al diseño de campañas en IDEO. Tiene un enfoque en impacto social y cambio organizacional, basándose en una estrategia centrada en las personas."
+        }
+    }
+}

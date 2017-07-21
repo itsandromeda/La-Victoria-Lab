@@ -1,9 +1,10 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var sass = require('gulp-sass');
-var browserify = require('gulp-browserify');
-var rename = require('gulp-rename');
+var gulp        = require('gulp');
+var concat      = require('gulp-concat');
+var sass        = require('gulp-sass');
+var browserify  = require('gulp-browserify');
+var rename      = require('gulp-rename');
 var browserSync = require('browser-sync').create();
+var nodemon     = require('gulp-nodemon');
 
 
 var config = {
@@ -93,11 +94,14 @@ gulp.task("sass-watch", ["sass"], function (done) {
     done();
 });
 
-gulp.task("serve", ()=> {
-    browserSync.init({
-        server: {
-            baseDir: config.dist
-        }
+gulp.task('default', ['browserSync'], function () {
+});
+
+gulp.task('browserSync', ['nodemon'], () => {
+    browserSync.init(null, {
+        proxy: "http://localhost:3000",
+        files: ["public/**/*.*"],
+        port: 7000,
     });
 
     gulp.watch(sources.html, ["html-watch"]);
@@ -107,4 +111,18 @@ gulp.task("serve", ()=> {
     gulp.watch(sources.sass, ["sass-watch"]);
     gulp.watch(sources.rootJS, ["js-watch"]);
 
+});
+
+gulp.task('nodemon', function(cb){
+
+    const started = false;
+
+    return nodemon({
+        script: 'server.js'
+    }).on('start', function(){
+        if(!started){
+            cb();
+            started = true;
+        }
+    });
 });

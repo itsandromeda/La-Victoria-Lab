@@ -1,34 +1,52 @@
-/*global $, schedule*/
+'use strict';
+
 const render = (root) => {
+
     root.empty();
+
     const wrapper = $('<div class="wrapper"></div>');
 
-    if (settings.screen === null) {
-        wrapper.append(schedule(_ => {
-            render(root);
-        }));
+    const update = function() {
+        render(root);
     }
+
+    if(state.screen == null) {
+        wrapper.append(schedule(update))
+    }
+
     root.append(wrapper);
-};
 
-const settings = {
-    screen: null,
+}
+
+const state = {
     data: null,
-    id: null
+    screen: null,
+    users: null, 
+    talks: null,
+    speakers: null
 };
 
-$(_ => {
-    const root = $('#root');
-    render(root);
-    var config = {
-        apiKey: "AIzaSyDnmZ9s2wBY-7wceqy3bdZ8u5623xm_3XU",
-        authDomain: "lavictorialab-a98f8.firebaseapp.com",
-        databaseURL: "https://lavictorialab-a98f8.firebaseio.com",
-        projectId: "lavictorialab-a98f8",
-        storageBucket: "lavictorialab-a98f8.appspot.com",
-        messagingSenderId: "912917476975"
-    };
-    firebase.initializeApp(config);
-    console.log(firebase);
-    
+$( _ => {
+
+    getJSON('/api/users', (err, json) => {
+        if(err){ return alert(err.message);}
+        state.users = json;
+        console.log(state.users);
+
+        getJSON('/api/talks', (err, json) => {
+            if(err){ return alert(err.message);}
+            state.talks = json;
+            console.log(state.talks);
+
+            getJSON('/api/speakers', (err, json) => {
+                if(err){ return alert(err.message);}
+                state.speakers = json;
+                console.log(state.speakers);
+
+                const root = $('#root');
+                render(root)
+            });
+        });
+    });
+
 });

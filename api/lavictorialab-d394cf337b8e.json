@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lavictorialab-a98f8",
+  "private_key_id": "d394cf337b8ed2db0bc8cdae2126b7f19a01f539",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDNMdeeJ3ffVIrf\n+cuct1ewHFD90DaZr8yfk5bLYv1Ftybs8HNHFv//Kb4VLOVIRkblG4iW4KbisKxV\nsz6uBaqnygio1ygAODpps3L76WeDiblxjWGeMHq+dOUCdEUft0onDjO6C11yL7bX\nevkV4HxZRc8kK++xsg8is5GJRJVcIq2+Af/a6RbLFSuxB9IdWZtsO093k6tPbMsw\n+b9kW1zGzb9EUMcNQ57h9jM5SdcxmNqvEyUNf6P1fLWK8GnmLstD++Zsv6kEbamm\nHQx8boyQkvgxdV6Db30HvkbQyPvLjXrD9rmmwHsxC5leNMGSo3vhDzWuYPidTQia\nQITXASybAgMBAAECggEAIPVvNg643mfB9r/fc0ivuQXorHFpPmj9Fmn/v/jNHbQ8\nIwrBjsWkUOPvjY8sijNfknqdsekGZUW401B7Mjs5chdYKhEvx6PrHgHzkir8tCVx\nt/TcR9XETBs9PZZXaVoTew/OQdqEI/cuCJEkDojZmwKaMavXpanSweF98EJ9NdMX\n2B+ZlxDe90AjKJctk+oQP7e4nIf6JqJfYnV1aXghKBwWDF4+cbOan5ai2fEGYLWy\nFaSxRmKfJgzEmjCsejJtEsF7D5XXsVv8ZNvy0suvmAi1ojCq7yL62T0LeLy4GrkA\neRX47QNChoxuiTqxs7mqtWVG3Lad+eqtYt0xDt5koQKBgQDqF+pbPTm8BIHEIS6X\nrPWvys0AXH+QteC8Py6VShrhSIK7iO07a64TbahbSKp8H5SvRxCXxdxLrwzti5pG\neNVIYJNmKXNrxwNG2MI7giusLWwat542PBWNxUELRaUM6ETZHEmb39SUm+gmZUPU\neBdvjg7MlzB2FGzwcplIMc49DQKBgQDgZZyDiriUMs1CD2s4axTMS+zj9ytJrt7T\nAHY+uAeb4XPiGHnA4BVTeZdbmy8ffqwyImwGtCL3kNKt/CkAf/TIYUl9i66i0PW1\nXpzwlzR0MKAYpZ+29L/MyThX562oFXvqdundiMHS0uby8sAWObDjpyV3eLjb4vhd\nmv5E4UO2RwKBgE4mc8fH9dlOC+BlT3+1b0QjyTKgrrmp7oAJ+8w9NCIXqgVfngtj\nVHcJ+dWXucq8ZE/rwp9Yn8Xoh8FaBMQYHOQP0cWeevj1NKPXQ2jIeTn+5AM7X6ct\ngeiVfLR9qK9Zb3qn1e8i135RWjxPPEjXWsOUQl6M7tHM2d2f9IpEjlyVAoGAWK1v\nI8CvXsmQuflz6tDOYEnk7NXhwnWb0xDMqc56G00GSaRYgTNM2jcj7GywO6cIj6tw\nu1l2tBUEXQNYhL0MVB+2Nin8MpWXdDxWkvF+JiiNLBBPxLKGFXyzinGg+9q5pJen\npgeEaTc1U29BH8desyh7svH/Q843Tm6Q61GGO8MCgYEAgQq3VciPmJXM4obqACQn\nM2H+HbvBlR5O+gb5fYIk5+wLM5Xxz3ci0CrV3lCK2mvxNGXxQUUtqjSeJfvJzq00\nZgNIbBAkqL1rYptcF+TcRZQyRDQYhgNbmK+QCGPvPjWjoe92sCSdSgD7qWjZcohE\nB1U/pw+XRkELxBxllY5x+xk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "lvldata@lavictorialab-a98f8.iam.gserviceaccount.com",
+  "client_id": "113218138707140111776",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lvldata%40lavictorialab-a98f8.iam.gserviceaccount.com"
+}

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const schedule = () => {
+=======
+const schedule = (update) => {
+>>>>>>> API
     const container = $(`<header class="container-fluid">
                             <nav class="row">
                                 <h1>MYFEST</h1>
