@@ -19,23 +19,53 @@ const render = (root) => {
 }
 
 const state = {
-	screen: null,
 	data: null,
-	id: null
+	screen: null,
+	users: null
 };
 
 $( _ => {
 
-	getJSON('test.json', (err, json) => {
+	/*getJSON('api/users', (err, json) => {
 
 		if(err){ return alert(err.message);}
-		state.data = json.charlas
+		state.data = json
 		console.log(state.data)
 
 		const root = $('#root');
 		render(root);
 
+	});*/
+
+	getJSON('/api/users', (err, json) => {
+		if(err){ return alert(err.message);}
+		state.users = json;
+		console.log(state.data)
+
+		const root = $('#root');
+		render(root)
 	});
+
+
+/*	$.get('https://lavictorialab-a98f8.firebaseio.com', function(data) {
+		state.data = data
+
+		const root = $('#root');
+		render(root)
+
+	});
+*/
+	// const root = $('#root');
+	// render(root)
+
+/*	$.get('https://lavictorialab-a98f8.firebaseio.com/', function(data) {
+
+		state.data = data
+		console.log(state.data)
+
+		const root = $('#root');
+		render(root)
+	});*/
 });
 
 const schedule = (update) => {
