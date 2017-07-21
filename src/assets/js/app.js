@@ -6,16 +6,19 @@ const render = (root) => {
 
     const wrapper = $('<div class="wrapper"></div>');
 
-    const update = function() {
+    const update = function () {
         render(root);
     }
 
-    if(state.screen == null) {
-        wrapper.append(schedule(update))
+    if (state.screen === null) {
+        wrapper.append(Login(update));
+    } else if (state.screen === 1) {
+        wrapper.append(Speaker(update));
+    } else if (state.screen === 2) {
+        wrapper.append(Schedule(update));
     }
 
     root.append(wrapper);
-
 }
 
 const state = {
@@ -27,7 +30,6 @@ const state = {
 };
 
 $( _ => {
-
     getJSON('/api/users', (err, json) => {
         if(err){ return alert(err.message);}
         state.users = json;

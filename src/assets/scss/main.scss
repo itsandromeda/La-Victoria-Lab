@@ -21,6 +21,6 @@
 /* LAYOUTS - Page layout styles */
 
 @import '2-layouts/_header.scss';
-h1 {
-    color: red !important;
-}
+@import '2-layouts/_login.scss';
+@import '2-layouts/_schedule.scss';
+@import '2-layouts/_speaker.scss';

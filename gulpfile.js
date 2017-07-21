@@ -9,15 +9,17 @@ var nodemon     = require('gulp-nodemon');
 
 var config = {
     source: './src/',
-    dist: './public/'
+    dist: './public/',
+    modules: './node_modules/'
 };
 
 var paths = {
     assets: "assets/",
     html: "**/*.html",
     json: '**/*.json',
-    img: "img/**",
-    js:"js/*.js",
+    png: "img/**/*.png",
+    jpg: "img/**/*.jpg",
+    js: "js/*.js",
 
     components: "components/**",
     utils: "utils/**",
@@ -25,21 +27,26 @@ var paths = {
     css: "css",
     sass: "scss/**/*.scss",
     mainSass: "scss/main.scss",
-    mainJS:"js/**/*.js"
+    mainJS: "js/**/*.js",
+    SASS: 'scss/**/*.scss',
+    bootstrap: 'bootstrap/dist/'
 };
 
 var sources = {
     assets: config.source + paths.assets,
     html: config.source + paths.html,
     json: config.source + paths.json,
-    img: config.source + paths.assets + paths.img,
-    js: config.source + paths.assets +  paths.js,
+    png: config.source + paths.assets + paths.png,
+    jpg: config.source + paths.assets + paths.jpg,
+    js: config.source + paths.assets + paths.js,
     sass: config.source + paths.assets + paths.sass,
     rootSass: config.source + paths.assets + paths.mainSass,
-    rootJS: config.source + paths.assets + paths.mainJS
+    rootJS: config.source + paths.assets + paths.mainJS,
+    bootstrapCSS: config.modules + paths.bootstrap + 'css/bootstrap.min.css',
+    bootstrapJS: config.modules + paths.bootstrap + 'js/bootstrap.min.js'
 };
 
-gulp.task('html', ()=> {
+gulp.task('html', () => {
     gulp.src(sources.html)
         .pipe(gulp.dest(config.dist));
 });
@@ -49,22 +56,22 @@ gulp.task('json', () => {
         .pipe(gulp.dest(config.dist));
 })
 
-gulp.task('img', ()=> {
-    gulp.src(sources.img)
+gulp.task('img', () => {
+    gulp.src([sources.png, sources.jpg])
         .pipe(gulp.dest(config.dist + paths.assets + "img"));
 });
 
-gulp.task('sass', ()=> {
-    gulp.src(sources.rootSass)
+gulp.task('sass', () => {
+    gulp.src([sources.bootstrapCSS, sources.rootSass])
         .pipe(sass({
-        outputStyle: "expanded"
-    })
-              .on ("error", sass.logError))
+            outputStyle: 'expanded'
+        }).on("error", sass.logError))
+        .pipe(concat('main.css'))
         .pipe(gulp.dest(config.dist + paths.assets + "css"));
 });
 
-gulp.task('js', ()=> {
-    gulp.src(sources.rootJS)
+gulp.task('js', () => {
+    gulp.src([sources.bootstrapJS, sources.rootJS])
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest(config.dist + paths.assets + "js"));
 });
@@ -94,6 +101,7 @@ gulp.task("sass-watch", ["sass"], function (done) {
     done();
 });
 
+
 gulp.task('default', ['browserSync'], function () {
 });
 
@@ -102,11 +110,12 @@ gulp.task('browserSync', ['nodemon'], () => {
         proxy: "http://localhost:3000",
         files: ["public/**/*.*"],
         port: 7000,
+
     });
 
     gulp.watch(sources.html, ["html-watch"]);
     gulp.watch(sources.json, ["json-watch"]);
-    gulp.watch(sources.img, ["img-watch"]);
+    gulp.watch([sources.jpg, sources.png], ["img-watch"]);
     gulp.watch(sources.fonts, ["fonts-watch"]);
     gulp.watch(sources.sass, ["sass-watch"]);
     gulp.watch(sources.rootJS, ["js-watch"]);
