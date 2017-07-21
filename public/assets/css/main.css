@@ -7165,5 +7165,29 @@ button.close {
   border-radius: 50%;
   position: absolute;
   top: 40%;
-  left: -25%;
+  left: -23.5%;
+}
+
+.speaker {
+  padding-top: 1em;
+}
+
+.speaker .image-absolute {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.speaker span {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.speaker i {
+  color: #F79266 !important;
 }

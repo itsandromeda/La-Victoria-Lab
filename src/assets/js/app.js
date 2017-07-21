@@ -13,13 +13,12 @@ const render = (root) => {
     if (state.screen === null) {
         wrapper.append(Login(update));
     } else if (state.screen === 1) {
-        wrapper.append(Schedule(update));
-    } else if (state.screen === 2) {
         wrapper.append(Speaker(update));
+    } else if (state.screen === 2) {
+        wrapper.append(Schedule(update));
     }
 
     root.append(wrapper);
-
 }
 
 const state = {
