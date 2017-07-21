@@ -17,16 +17,12 @@ const render = (root) => {
         render(root);
     }
 
-    switch (state.screen) {
-    case null:
+    if (state.screen === null) {
         wrapper.append(Login(update));
-        break;
-    case 1:
+    } else if (state.screen === 1) {
         wrapper.append(Schedule(update));
-        break;
-    case 2:
+    } else if (state.screen === 2) {
         wrapper.append(Speaker(update));
-        break;
     }
 
     root.append(wrapper);
@@ -66,36 +62,45 @@ $(_ => {
     });
 });
 const Login = (update) => {
-    const container = $(`<div class="login container text-center">
-                             <div class="row">
-                                <div class="login__title col-xs-12">
-                                    <h1>FEST_17</h1>
-                                    <p><span>INTERCORP</span> INNOVATION FEST</p>
-                                </div>
-                                <div class="col-xs-12">
-                                    <form class="login__form">
-                                        <i class="fa fa-user-o"></i>
-                                        <input placeholder="DNI">
-                                        <button class="btn btn-danger" type="submit">Sign In</button>
-                                    </form>
-                                </div>
-                             </div>
-                         </div>`);
+    const container = $(`<div class="login container text-center"></div>`),
+        row = $('<div class="row"></div>'),
+        title = $('<div class="login__title col-xs-12"></div>'),
+        h1 = $('<h1>FEST_17</h1>'),
+        p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
+        col_xs_12 = $('<div class="col-xs-12"></div>'),
+        form = $('<form class="login__form"></form>'),
+        i = $('<i class="fa fa-user-o"></i>'),
+        input = $('<input placeholder="DNI">'),
+        button = $('<button id="sign-in" class="btn">Sign In</button>');
+
+    container.append(row);
+    row.append(title, col_xs_12);
+    title.append(h1, p);
+    col_xs_12.append(form);
+    form.append(i, input);
+    form.append(button);
+    
+    button.click(_ => {
+        state.screen = 1;
+        update();
+    });
 
     return container;
 };
 const Schedule = (update) => {
-    const container = $(`<header class="header-schedule container-fluid">
-                            <div class="header-schedule_title row">
-                                <h1>MYFEST</h1>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <img src="" alt="avatar">
-                                </div>
-                                <div class="col-xs-9">
-                                    <h3>Ana Izquierdo</h3>
-                                    <p>Oeschle</p>
+    const container = $(`<header class="header-schedule">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <h1>MYFEST</h1>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="image"></div>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h3>Ana Izquierdo</h3>
+                                        <p>Oeschle</p>
+                                    </div>
                                 </div>
                             </div>
                          </header>
@@ -103,39 +108,42 @@ const Schedule = (update) => {
                             <div class="container">
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <div class="col-xs-4">
-                                            <div>
-                                                <span>Horario</span>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
+                                        <div class="col-xs-3">
+                                            <div class="schedule-wrap__sign">
+                                                <div class="schedule-label text-center">Horario</div>
+                                                <div class="long-bar"></div>
                                             </div>
                                         </div>
-                                        <div class="col-xs-8">
-                                            <div class="col-xs-12">
-                                                <p>15:00</p>
-                                                <p>What is Digital Transformation</p>
+                                        <div class="schedule-wrap__container col-xs-9">
+                                            <div class="schedule-wrap__box col-xs-12">
+                                                <span class="close">&times;</span>
+                                                <p class="time">8:00 - 10:00am</p>
+                                                <div class="circle"></div>
+                                                <p class="title">What is Digital Transformation?</p>
                                                 <p>Mike Bracken</p>
-                                                <div>
+                                                <div class="text-right">
                                                     <i class="fa fa-map-marker"></i>
-                                                    <p>Carpa Mixta</p>
+                                                    <span>Carpa Tech</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12">
-                                                <p>15:00</p>
-                                                <p>What is Digital Transformation</p>
+                                            <div class="schedule-wrap__box col-xs-12">
+                                                <span class="close">&times;</span>
+                                                <p class="time">10:30 - 11:00am</p>
+                                                <div class="circle"></div>
+                                                <p class="title">What is Digital Transformation</p>
                                                 <p>Mike Bracken</p>
-                                                <div>
+                                                <div class="text-right">
                                                     <i class="fa fa-map-marker"></i>
                                                     <span>Carpa Mixta</span>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12">
-                                                <p>15:00</p>
-                                                <p>What is Digital Transformation</p>
+                                            <div class="schedule-wrap__box col-xs-12">
+                                                <span class="close">&times;</span>
+                                                <p class="time">11:30 - 12:30am</p>
+                                                <div class="circle"></div>
+                                                <p class="title">What is Digital Transformation</p>
                                                 <p>Mike Bracken</p>
-                                                <div>
+                                                <div class="text-right">
                                                     <i class="fa fa-map-marker"></i>
                                                     <span>Carpa Mixta</span>
                                                 </div>
@@ -143,8 +151,8 @@ const Schedule = (update) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">                                   
-                                    <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
+                                <div class="row text-center">                                   
+                                    <button id="change-talks" class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
                                 </div>
                             </div>
                          </section>`);

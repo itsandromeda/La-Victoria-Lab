@@ -10,16 +10,12 @@ const render = (root) => {
         render(root);
     }
 
-    switch (state.screen) {
-    case null:
+    if (state.screen === null) {
         wrapper.append(Login(update));
-        break;
-    case 1:
+    } else if (state.screen === 1) {
         wrapper.append(Schedule(update));
-        break;
-    case 2:
+    } else if (state.screen === 2) {
         wrapper.append(Speaker(update));
-        break;
     }
 
     root.append(wrapper);

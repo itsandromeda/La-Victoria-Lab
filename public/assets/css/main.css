@@ -6972,9 +6972,58 @@ button.close {
 */
 /* BASE - Base styles, variables, mixins, etc. */
 /* MODULES - Individual site components */
+#change-talks {
+  color: #fff;
+  background: #F77062;
+  background: -webkit-linear-gradient(left bottom, #F77062, #FE5196);
+  background: -o-linear-gradient(bottom left, #F77062, #FE5196);
+  background: -moz-linear-gradient(bottom left, #F77062, #FE5196);
+  background: linear-gradient(to top right, #F77062, #FE5196);
+  border: none;
+  padding: 10px;
+  width: 90%;
+}
+
 /* LAYOUTS - Page layout styles */
+.header-schedule {
+  background: #F77062;
+  background: -webkit-linear-gradient(left bottom, #F77062, #FE5196);
+  background: -o-linear-gradient(bottom left, #F77062, #FE5196);
+  background: -moz-linear-gradient(bottom left, #F77062, #FE5196);
+  background: linear-gradient(to top right, #F77062, #FE5196);
+  color: #fff;
+  padding-bottom: 5%;
+}
+
+.header-schedule h1 {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+
+.header-schedule h3 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+}
+
+.header-schedule p {
+  font-size: 0.9em;
+}
+
+.header-schedule .image {
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
 .login {
-  background-color: #F77062;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: left;
   color: #fff;
   min-height: 100vh;
   padding: 0 20px;
@@ -6985,12 +7034,12 @@ button.close {
 }
 
 .login__title h1 {
-  font-size: 4em;
+  font-size: 3.9em;
   font-weight: bold;
 }
 
 .login__title p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .login__title p span {
@@ -7019,8 +7068,102 @@ button.close {
 }
 
 .login__form button {
+  background-color: #F77062;
   border-radius: 0;
   outline: none;
   padding: 10px 0 !important;
   width: 100%;
+}
+
+.schedule-wrap [class*="col-"] {
+  padding: 5px;
+}
+
+.schedule-wrap__sign .schedule-label {
+  background: #F77062;
+  background: -webkit-linear-gradient(left bottom, #F77062, #FE5196);
+  background: -o-linear-gradient(bottom left, #F77062, #FE5196);
+  background: -moz-linear-gradient(bottom left, #F77062, #FE5196);
+  background: linear-gradient(to top right, #F77062, #FE5196);
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.schedule-wrap__sign .long-bar {
+  background: #FE5196;
+  background: -webkit-linear-gradient(left bottom, #FE5196, #F77062);
+  background: -o-linear-gradient(bottom left, #FE5196, #F77062);
+  background: -moz-linear-gradient(bottom left, #FE5196, #F77062);
+  background: linear-gradient(to top right, #FE5196, #F77062);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  height: 300px;
+  width: 5px;
+  margin: auto;
+}
+
+.schedule-wrap__box {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 10px !important;
+  margin-bottom: 10px;
+}
+
+.schedule-wrap__box p {
+  font-size: 0.9em;
+  color: #F77062;
+  margin-bottom: 0;
+}
+
+.schedule-wrap__box i {
+  color: #FE5196;
+}
+
+.schedule-wrap__box .close {
+  font-size: 1.3em;
+  position: relative;
+  top: -5px;
+}
+
+.schedule-wrap__box .text-right span {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #959595;
+}
+
+.schedule-wrap .time {
+  color: #959595;
+  font-weight: bold;
+}
+
+.schedule-wrap .title {
+  font-weight: bold;
+  color: #F77062;
+}
+
+.schedule-wrap__box:first-child {
+  margin-top: 40px;
+}
+
+.circle {
+  background: #F7B362;
+  background: -webkit-linear-gradient(left bottom, #F7B362, #FEEA51);
+  background: -o-linear-gradient(bottom left, #F7B362, #FEEA51);
+  background: -moz-linear-gradient(bottom left, #F7B362, #FEEA51);
+  background: linear-gradient(to top right, #F7B362, #FEEA51);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: -25%;
 }

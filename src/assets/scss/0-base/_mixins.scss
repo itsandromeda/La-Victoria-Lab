@@ -1,0 +1,13 @@
+@mixin gradient ($left-color, $right-color) {
+    background: $left-color;
+    background: -webkit-linear-gradient(left bottom, $left-color, $right-color);
+    background: -o-linear-gradient(bottom left, $left-color, $right-color);
+    background: -moz-linear-gradient(bottom left, $left-color, $right-color);
+    background: linear-gradient(to top right, $left-color, $right-color);
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}

@@ -1,0 +1,24 @@
+.header-schedule {
+    @include gradient(#F77062, #FE5196);
+    color: #fff;
+    padding-bottom: 5%;
+    h1 {
+        font-size: 0.8em;
+        margin-bottom: 2em;
+    }
+    h3 {
+        font-size: 1.1em;
+        margin: 10px 0 5px;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .image {
+        background-color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        @include box-shadow(-10px, 0, 20px, rgba(0, 0, 0, 0.2));
+        margin: auto;
+    }
+}

@@ -1,0 +1,68 @@
+.schedule-wrap {
+    [class*="col-"] {
+        padding: 5px;
+    }
+    &__sign {
+        .schedule-label {
+            @include gradient(#F77062, #FE5196);
+            @include box-shadow(0, 4px, 6px, rgba(0, 0, 0, 0.3));
+            color: #fff;
+            padding: 5px 10px;
+        }
+        .long-bar {
+            @include gradient(#FE5196, #F77062);
+            @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3));
+            height: 300px;
+            width: 5px;
+            margin: auto;
+        }
+    }
+    &__box {
+        @include box-shadow(0, 3px, 3px, rgba(0, 0, 0, 0.2));
+        position: relative;
+        padding: 10px !important;
+        margin-bottom: 10px;
+        p {
+            font-size: 0.9em;
+            color: #F77062;
+            margin-bottom: 0;
+        }
+        i {
+            color: #FE5196;
+        }
+        .close {
+            font-size: 1.3em;
+            position: relative;
+            top: -5px;
+        }
+        .text-right {
+            span {
+                font-weight: bold;
+                font-size: 0.9em;
+                color: #959595;
+            }
+        }
+    }
+    .time {
+        color: #959595;
+        font-weight: bold;
+    }
+    .title {
+        font-weight: bold;
+        color: #F77062;
+    }
+    &__box:first-child {
+        margin-top: 40px;
+    }
+}
+
+.circle {
+    @include gradient(#F7B362, #FEEA51);
+    @include box-shadow(0, 4px, 10px, rgba(0, 0, 0, 0.3));
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: -25%;
+}
