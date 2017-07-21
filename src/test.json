@@ -1,0 +1,21 @@
+{
+	"charlas": {
+		"A1": {
+			"carpa": "user",
+			"name": "La implementación del proyecto Chaplin",
+			"speaker": {
+				"S1": {
+					"speaker_name": "Fernando Sorianno",
+					"company": "Cineplanet"
+				}
+			},
+			"aforo": 150,
+			"asistentes": 0,
+			"horario": {
+				"inicio": "9:00",
+				"final": "10:00"
+			},
+		    "speakers": [ "a", "b", "c" ]
+		}
+  	}
+}

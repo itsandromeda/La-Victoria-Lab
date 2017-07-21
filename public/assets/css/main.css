@@ -1,0 +1,13 @@
+/*
+    =======================
+    Personal Portfolio
+    Author: Annia J. Flores
+    Version: 1.0.0
+    =======================
+*/
+/* BASE - Base styles, variables, mixins, etc. */
+/* MODULES - Individual site components */
+/* LAYOUTS - Page layout styles */
+h1 {
+  color: red !important;
+}
