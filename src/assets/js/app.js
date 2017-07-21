@@ -1,18 +1,27 @@
-/*global $, schedule*/
+'use strict';
+
 const render = (root) => {
+
     root.empty();
+
     const wrapper = $('<div class="wrapper"></div>');
 
-    if (settings.screen === null) {
-        wrapper.append(schedule(_ => {
-            render(root);
-        }));
+    const update = function() {
+        render(root);
     }
-    root.append(wrapper);
-};
 
-const settings = {
-    screen: null
+    if(state.screen == null) {
+        wrapper.append(schedule(update))
+    }
+
+    root.append(wrapper);
+
+}
+
+const state = {
+    screen: null,
+    data: null,
+    id: null
 };
 
 $(_ => {
@@ -27,5 +36,15 @@ $(_ => {
         messagingSenderId: "912917476975"
     };
     firebase.initializeApp(config);
-    console.log(firebase);
+
+    getJSON('test.json', (err, json) => {
+
+        if(err){ return alert(err.message);}
+        state.data = json
+        console.log(state.data)
+
+        const root = $('#root');
+        render(root);
+
+    });
 });
