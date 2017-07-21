@@ -1,9 +1,8 @@
-const schedule = () => {
-    const container = $(`<header class="container-fluid">
-                            <nav class="row">
+const Schedule = (update) => {
+    const container = $(`<header class="header-schedule container-fluid">
+                            <div class="header-schedule_title row">
                                 <h1>MYFEST</h1>
-                                <i class="fa fa-bars"></i>
-                            </nav>
+                            </div>
                             <div class="row">
                                 <div class="col-xs-3">
                                     <img src="" alt="avatar">
@@ -17,42 +16,52 @@ const schedule = () => {
                          <section class="schedule-wrap">
                             <div class="container">
                                 <div class="row">
-                                    
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-4">
+                                            <div>
+                                                <span>Horario</span>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <p>Carpa Mixta</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>Carpa Mixta</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>Carpa Mixta</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
+                                <div class="row">                                   
+                                    <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
                                 </div>
                             </div>
-                         </section>
-                         <footer>
-                            <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
-                         </footer>`);
+                         </section>`);
 
     return container;
 };

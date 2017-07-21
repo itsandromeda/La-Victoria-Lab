@@ -6,12 +6,20 @@ const render = (root) => {
 
     const wrapper = $('<div class="wrapper"></div>');
 
-    const update = function() {
+    const update = function () {
         render(root);
     }
 
-    if(state.screen == null) {
-        wrapper.append(schedule(update))
+    switch (state.screen) {
+    case null:
+        wrapper.append(Login(update));
+        break;
+    case 1:
+        wrapper.append(Schedule(update));
+        break;
+    case 2:
+        wrapper.append(Speaker(update));
+        break;
     }
 
     root.append(wrapper);
@@ -39,7 +47,9 @@ $(_ => {
 
     getJSON('test.json', (err, json) => {
 
-        if(err){ return alert(err.message);}
+        if (err) {
+            return alert(err.message);
+        }
         state.data = json
         console.log(state.data)
 
