@@ -1,24 +1,17 @@
-'use strict';
-
+/*global $, schedule*/
 const render = (root) => {
-
     root.empty();
-
     const wrapper = $('<div class="wrapper"></div>');
 
-    const update = function() {
-        render(root);
+    if (settings.screen === null) {
+        wrapper.append(schedule(_ => {
+            render(root);
+        }));
     }
-
-    if(state.screen == null) {
-        wrapper.append(schedule(update))
-    }
-
     root.append(wrapper);
+};
 
-}
-
-const state = {
+const settings = {
     screen: null,
     data: null,
     id: null
@@ -36,15 +29,6 @@ $(_ => {
         messagingSenderId: "912917476975"
     };
     firebase.initializeApp(config);
-
-    getJSON('test.json', (err, json) => {
-
-        if(err){ return alert(err.message);}
-        state.data = json
-        console.log(state.data)
-
-        const root = $('#root');
-        render(root);
-
-    });
+    console.log(firebase);
+    
 });
