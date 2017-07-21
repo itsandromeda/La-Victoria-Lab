@@ -11,28 +11,72 @@ const render = (root) => {
     root.empty();
     const wrapper = $('<div class="wrapper"></div>');
 
-    if (settings.screen === null) {
-        wrapper.append(schedule(_ => {
+    switch (state.screen) {
+    case null:
+        wrapper.append(Login(_ => {
             render(root);
         }));
+        break;
+    case 1:
+        wrapper.append(Schedule(_ => {
+            render(root);
+        }));
+        break;
+    case 2:
+        wrapper.append(Speaker(_ => {
+            render(root);
+        }));
+        break;
     }
     root.append(wrapper);
 };
 
-const settings = {
+const state = {
     screen: null
 };
 
 $(_ => {
     const root = $('#root');
     render(root);
+
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAmSJYoXGPyV6lh8kQjiiOP7GQqepnP3uU",
+        authDomain: "la-victoria-lab.firebaseapp.com",
+        databaseURL: "https://la-victoria-lab.firebaseio.com",
+        projectId: "la-victoria-lab",
+        storageBucket: "",
+        messagingSenderId: "331922178054"
+    };
+    firebase.initializeApp(config);
+    console.log(firebase);
+
+    var database = firebase.database();
 });
-const schedule = () => {
-    const container = $(`<header class="container-fluid">
-                            <nav class="row">
+const Login = () => {
+    const container = $(`<div class="login container text-center">
+                             <div class="row">
+                                <div class="login__title col-xs-12">
+                                    <h1>FEST_17</h1>
+                                    <p><span>INTERCORP</span> INNOVATION FEST</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <form class="login__form">
+                                        <i class="fa fa-user-o"></i>
+                                        <input placeholder="DNI">
+                                        <button class="btn btn-danger" type="submit">Sign In</button>
+                                    </form>
+                                </div>
+                             </div>
+                         </div>`);
+
+    return container;
+};
+const Schedule = () => {
+    const container = $(`<header class="header-schedule container-fluid">
+                            <div class="header-schedule_title row">
                                 <h1>MYFEST</h1>
-                                <i class="fa fa-bars"></i>
-                            </nav>
+                            </div>
                             <div class="row">
                                 <div class="col-xs-3">
                                     <img src="" alt="avatar">
@@ -46,43 +90,64 @@ const schedule = () => {
                          <section class="schedule-wrap">
                             <div class="container">
                                 <div class="row">
-                                    
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-4">
+                                            <div>
+                                                <span>Horario</span>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <p>Carpa Mixta</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>Carpa Mixta</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <p>15:00</p>
+                                                <p>What is Digital Transformation</p>
+                                                <p>Mike Bracken</p>
+                                                <div>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>Carpa Mixta</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <p>15:00</p>
-                                        <p>What is Digital Transformation</p>
-                                        <p>Mike Bracken</p>
-                                        <div>
-                                            <i class="fa fa-location"></i>
-                                            <p>Carpa Mixta</p>
-                                        </div>
-                                    </div>
+                                <div class="row">                                   
+                                    <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
                                 </div>
                             </div>
-                         </section>
-                         <footer>
-                            <button class="text-center">CAMBIAR MIS CHARLAS REGISTRADAS</button>
-                         </footer>`);
+                         </section>`);
 
+    return container;
+};
+const Speaker = () => {
+    const container = $(`<header>
+                            <div class="container">
+                                <nav class="row">
+                                    <i class="fa fa-arrow-left"></i>
+                                </nav>
+                            </div>
+                         </header>`);
+    
     return container;
 };
 },{}]},{},[1])

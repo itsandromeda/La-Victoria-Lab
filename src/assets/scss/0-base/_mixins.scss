@@ -1,0 +1,7 @@
+@mixin gradient($left-bottom, $top-right) {
+    background: $left-bottom;
+    background: -webkit-linear-gradient(left bottom, $left-bottom, $top-right);
+    background: -o-linear-gradient(bottom left, $left-bottom, $top-right);
+    background: -moz-linear-gradient(bottom left, $left-bottom, $top-right);
+    background: linear-gradient(to bottom left, $left-bottom, $top-right);
+}

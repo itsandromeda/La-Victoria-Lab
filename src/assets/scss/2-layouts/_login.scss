@@ -1,0 +1,43 @@
+.login {
+    background-color: #F77062;
+    color: #fff;
+    min-height: 100vh;
+    padding: 0 20px;
+    &__title {
+        margin: 30% 0 25%;
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.1em;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    &__form {
+        position: relative;
+        input {
+            color: #333;
+            width: 100%;
+            border: 0;
+            margin-bottom: 10px;
+            padding: 10px 5px 10px 40px;
+            outline: none;
+        }
+        i {
+            font-size: 1.5em;
+            color: #ccc;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        button {
+            border-radius: 0;
+            outline: none;
+            padding: 10px 0 !important;
+            width: 100%;
+        }
+    }
+}
