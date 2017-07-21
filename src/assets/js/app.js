@@ -2,31 +2,31 @@
 
 const render = (root) => {
 
-	root.empty();
+    root.empty();
 
-	const wrapper = $('<div class="wrapper"></div>');
+    const wrapper = $('<div class="wrapper"></div>');
 
-	const update = function() {
-		render(root);
-	}
+    const update = function() {
+        render(root);
+    }
 
-	if(state.screen == null) {
-		wrapper.append(schedule(update))
-	}
+    if(state.screen == null) {
+        wrapper.append(schedule(update))
+    }
 
-	root.append(wrapper);
+    root.append(wrapper);
 
 }
 
 const state = {
-	data: null,
-	screen: null,
-	users: null
+    data: null,
+    screen: null,
+    users: null
 };
 
 $( _ => {
 
-	/*getJSON('api/users', (err, json) => {
+    /*getJSON('api/users', (err, json) => {
 
 		if(err){ return alert(err.message);}
 		state.data = json
@@ -37,17 +37,29 @@ $( _ => {
 
 	});*/
 
-	getJSON('/api/users', (err, json) => {
-		if(err){ return alert(err.message);}
-		state.users = json;
-		console.log(state.data)
+    getJSON('/api/users', (err, json) => {
+        if(err){ return alert(err.message);}
+        state.users = json;
+        console.log(state.users);
 
-		const root = $('#root');
-		render(root)
-	});
+        getJSON('/api/talks', (err, json) => {
+            if(err){ return alert(err.message);}
+            state.talks = json;
+            console.log(state.talks);
+
+            getJSON('/api/speakers', (err, json) => {
+                if(err){ return alert(err.message);}
+                state.speakers = json;
+                console.log(state.speakers);
+
+                const root = $('#root');
+                render(root)
+            });
+        });
+    });
 
 
-/*	$.get('https://lavictorialab-a98f8.firebaseio.com', function(data) {
+    /*	$.get('https://lavictorialab-a98f8.firebaseio.com', function(data) {
 		state.data = data
 
 		const root = $('#root');
@@ -55,10 +67,10 @@ $( _ => {
 
 	});
 */
-	// const root = $('#root');
-	// render(root)
+    // const root = $('#root');
+    // render(root)
 
-/*	$.get('https://lavictorialab-a98f8.firebaseio.com/', function(data) {
+    /*	$.get('https://lavictorialab-a98f8.firebaseio.com/', function(data) {
 
 		state.data = data
 		console.log(state.data)
