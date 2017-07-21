@@ -1,4 +1,4 @@
-const Speaker = (update) => {
+const Talks2 = (update) => {
     const mainWrap = $(`<div class="main-wrap"></div>`),
           header = $(`<header class="header-schedule speaker">
 <div class="container">
@@ -9,11 +9,11 @@ const Speaker = (update) => {
 </div>
 <div class="col-xs-12">
 <h3>Registro a charlas</h3>
-<p>1er Turno</p>
+<p>3er Turno</p>
 </div>
 <div class="col-xs-12">
 <i class="fa fa-chevron-left"></i>
-<span> ${state.talks[1].schedule.start + ` - ` +state.talks[1].schedule.finish}</span>
+<span> ${state.talks[9].schedule.start + ` - ` +state.talks[9].schedule.finish}</span>
 <i class="fa fa-chevron-right"></i>
 </div>
 </div>
@@ -24,22 +24,22 @@ const Speaker = (update) => {
           icon_wrap1 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa User</p></div>`),
           content_wrap1 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p> ${state.talks[5].name} </p>
-<p> ${state.speakers[11].speaker_name}</p>
+<p> ${state.talks[18].name} </p>
+<p> ${state.speakers[5].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
 </div>
 <div class="col-xs-6">
-<button id="assist-btn">Asistir</button>
+<button class="assist">Asistir</button>
 </div>
 </div>`),
           block_2 = $(`<div class="block pink row"></div>`),
           icon_wrap2 = $(`<div class="col-xs-3 text-center"><i class="fa fa-globe"></i><p>Carpa Tech</p></div>`),
           content_wrap2 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p> ${state.talks[6].name} </p>
-<p> ${state.speakers[19].speaker_name}</p>
+<p> ${state.talks[15].name} </p>
+<p> ${state.speakers[10].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
@@ -52,8 +52,8 @@ const Speaker = (update) => {
           icon_wrap3 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa mix</p></div>`),
           content_wrap3 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p> ${state.talks[7].name} </p>
-<p> ${state.speakers[3].speaker_name}</p>
+<p> ${state.talks[6].name} </p>
+<p> ${state.speakers[7].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
@@ -66,8 +66,8 @@ const Speaker = (update) => {
           icon_wrap4 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa Org</p></div>`),
           content_wrap4 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p> ${state.talks[8].name} </p>
-<p> ${state.speakers[8].speaker_name}</p>
+<p> ${state.talks[7].name} </p>
+<p> ${state.speakers[20].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
@@ -83,17 +83,6 @@ const Speaker = (update) => {
     block_2.append(icon_wrap2, content_wrap2);
     block_3.append(icon_wrap3, content_wrap3);
     block_4.append(icon_wrap4, content_wrap4);
-
-    /*$('#assist-btn').click(_ => {
-        alert("asdads");
-        state.screen = 2;
-        update();
-    });*/
-    const reload = (() => {
-        state.screen = 2;
-        update();
-    });
-    window.setTimeout(reload,8000);
     
     return mainWrap;
 };

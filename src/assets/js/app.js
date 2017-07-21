@@ -15,7 +15,9 @@ const render = (root) => {
     } else if (state.screen === 1) {
         wrapper.append(Speaker(update));
     } else if (state.screen === 2) {
-        wrapper.append(Schedule(update));
+        wrapper.append(Talks(update));
+    } else if (state.screen === 3) {
+        wrapper.append(Talks2(update));
     }
 
     root.append(wrapper);

@@ -22,7 +22,9 @@ const render = (root) => {
     } else if (state.screen === 1) {
         wrapper.append(Speaker(update));
     } else if (state.screen === 2) {
-        wrapper.append(Schedule(update));
+        wrapper.append(Talks(update));
+    } else if (state.screen === 3) {
+        wrapper.append(Talks2(update));
     }
 
     root.append(wrapper);
@@ -66,7 +68,7 @@ const Login = (update) => {
           h1 = $('<h1>FEST_17</h1>'),
           p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
           col_xs_12 = $('<div class="col-xs-12"></div>'),
-          form = $('<form class="login__form"></form>'),
+          form = $('<div class="login__form"></div>'),
           i = $('<i class="fa fa-user-o"></i>'),
           input = $('<input type="text" maxlength="8" placeholder="DNI">'),
           button = $('<button id="sign-in" class="btn">Sign In</button>');
@@ -185,7 +187,7 @@ const Speaker = (update) => {
 </div>
 <div class="col-xs-12">
 <i class="fa fa-chevron-left"></i>
-<span>8am - 10am</span>
+<span> ${state.talks[1].schedule.start + ` - ` +state.talks[1].schedule.finish}</span>
 <i class="fa fa-chevron-right"></i>
 </div>
 </div>
@@ -196,56 +198,56 @@ const Speaker = (update) => {
           icon_wrap1 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa User</p></div>`),
           content_wrap1 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p>What is Digital Transformation?</p>
-<p>Mike Bracken</p>
+<p> ${state.talks[5].name} </p>
+<p> ${state.speakers[11].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
 </div>
 <div class="col-xs-6">
-<button>Asistir</button>
+<button id="assist-btn">Asistir</button>
 </div>
 </div>`),
           block_2 = $(`<div class="block pink row"></div>`),
-          icon_wrap2 = $(`<div class="col-xs-3 text-center"><i class="fa fa-globe"></i><p>Carpa User</p></div>`),
+          icon_wrap2 = $(`<div class="col-xs-3 text-center"><i class="fa fa-globe"></i><p>Carpa Tech</p></div>`),
           content_wrap2 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p>What is Digital Transformation?</p>
-<p>Mike Bracken</p>
+<p> ${state.talks[6].name} </p>
+<p> ${state.speakers[19].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
 </div>
 <div class="col-xs-6">
-<button>Asistir</button>
+<button class="assist">Asistir</button>
 </div>
 </div>`),
           block_3 = $(`<div class="block orange row"></div>`),
-          icon_wrap3 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa Org</p></div>`),
+          icon_wrap3 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa mix</p></div>`),
           content_wrap3 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p>What is Digital Transformation?</p>
-<p>Mike Bracken</p>
+<p> ${state.talks[7].name} </p>
+<p> ${state.speakers[3].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
 </div>
 <div class="col-xs-6">
-<button>Asistir</button>
+<button class="assist">Asistir</button>
 </div>
 </div>`),
           block_4 = $(`<div class="block lilac row"></div>`),
           icon_wrap4 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa Org</p></div>`),
           content_wrap4 = $(`<div class="col-xs-9">
 <div class="col-xs-12">
-<p>What is Digital Transformation?</p>
-<p>Mike Bracken</p>
+<p> ${state.talks[8].name} </p>
+<p> ${state.speakers[8].speaker_name}</p>
 </div>
 <div class="col-xs-6">
 <i class="fa fa-info"></i>
 </div>
 <div class="col-xs-6">
-<button>Asistir</button>
+<button class="assist">Asistir</button>
 </div>
 </div>`);
 
@@ -256,6 +258,199 @@ const Speaker = (update) => {
     block_3.append(icon_wrap3, content_wrap3);
     block_4.append(icon_wrap4, content_wrap4);
 
+    /*$('#assist-btn').click(_ => {
+        alert("asdads");
+        state.screen = 2;
+        update();
+    });*/
+    const reload = (() => {
+        state.screen = 2;
+        update();
+    });
+    window.setTimeout(reload,8000);
+    
+    return mainWrap;
+};
+const Talks = (update) => {
+    const mainWrap = $(`<div class="main-wrap"></div>`),
+          header = $(`<header class="header-schedule speaker">
+<div class="container">
+<div class="row text-center">
+<div class="col-xs-12">
+<h1>MYFEST_17</h1>
+<div class="image-absolute"></div>
+</div>
+<div class="col-xs-12">
+<h3>Registro a charlas</h3>
+<p>2do Turno</p>
+</div>
+<div class="col-xs-12">
+<i class="fa fa-chevron-left"></i>
+<span> ${state.talks[6].schedule.start + ` - ` +state.talks[6].schedule.finish}</span>
+<i class="fa fa-chevron-right"></i>
+</div>
+</div>
+</div>
+</header>`),
+          section = $(`<section class="speaker"></section>`),
+          block_1 = $(`<div class="block row"></div>`),
+          icon_wrap1 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa User</p></div>`),
+          content_wrap1 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[1].name} </p>
+<p> ${state.speakers[2].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_2 = $(`<div class="block pink row"></div>`),
+          icon_wrap2 = $(`<div class="col-xs-3 text-center"><i class="fa fa-globe"></i><p>Carpa Tech</p></div>`),
+          content_wrap2 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[2].name} </p>
+<p> ${state.speakers[20].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_3 = $(`<div class="block orange row"></div>`),
+          icon_wrap3 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa mix</p></div>`),
+          content_wrap3 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[3].name} </p>
+<p> ${state.speakers[19].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_4 = $(`<div class="block lilac row"></div>`),
+          icon_wrap4 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa Org</p></div>`),
+          content_wrap4 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[4].name} </p>
+<p> ${state.speakers[10].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`);
+
+    mainWrap.append(header, section);
+    section.append(block_1, block_2, block_3, block_4);
+    block_1.append(icon_wrap1, content_wrap1);
+    block_2.append(icon_wrap2, content_wrap2);
+    block_3.append(icon_wrap3, content_wrap3);
+    block_4.append(icon_wrap4, content_wrap4);
+
+    const reload = (() => {
+        state.screen = 3;
+        update();
+    });
+    window.setTimeout(reload,5000);
+    return mainWrap;
+    
+};
+const Talks2 = (update) => {
+    const mainWrap = $(`<div class="main-wrap"></div>`),
+          header = $(`<header class="header-schedule speaker">
+<div class="container">
+<div class="row text-center">
+<div class="col-xs-12">
+<h1>MYFEST_17</h1>
+<div class="image-absolute"></div>
+</div>
+<div class="col-xs-12">
+<h3>Registro a charlas</h3>
+<p>3er Turno</p>
+</div>
+<div class="col-xs-12">
+<i class="fa fa-chevron-left"></i>
+<span> ${state.talks[9].schedule.start + ` - ` +state.talks[9].schedule.finish}</span>
+<i class="fa fa-chevron-right"></i>
+</div>
+</div>
+</div>
+</header>`),
+          section = $(`<section class="speaker"></section>`),
+          block_1 = $(`<div class="block row"></div>`),
+          icon_wrap1 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa User</p></div>`),
+          content_wrap1 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[18].name} </p>
+<p> ${state.speakers[5].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_2 = $(`<div class="block pink row"></div>`),
+          icon_wrap2 = $(`<div class="col-xs-3 text-center"><i class="fa fa-globe"></i><p>Carpa Tech</p></div>`),
+          content_wrap2 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[15].name} </p>
+<p> ${state.speakers[10].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_3 = $(`<div class="block orange row"></div>`),
+          icon_wrap3 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa mix</p></div>`),
+          content_wrap3 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[6].name} </p>
+<p> ${state.speakers[7].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`),
+          block_4 = $(`<div class="block lilac row"></div>`),
+          icon_wrap4 = $(`<div class="col-xs-3 text-center"><i class="fa fa-users"></i><p>Carpa Org</p></div>`),
+          content_wrap4 = $(`<div class="col-xs-9">
+<div class="col-xs-12">
+<p> ${state.talks[7].name} </p>
+<p> ${state.speakers[20].speaker_name}</p>
+</div>
+<div class="col-xs-6">
+<i class="fa fa-info"></i>
+</div>
+<div class="col-xs-6">
+<button class="assist">Asistir</button>
+</div>
+</div>`);
+
+    mainWrap.append(header, section);
+    section.append(block_1, block_2, block_3, block_4);
+    block_1.append(icon_wrap1, content_wrap1);
+    block_2.append(icon_wrap2, content_wrap2);
+    block_3.append(icon_wrap3, content_wrap3);
+    block_4.append(icon_wrap4, content_wrap4);
+    
     return mainWrap;
 };
 'use strict';

@@ -5,7 +5,7 @@ const Login = (update) => {
           h1 = $('<h1>FEST_17</h1>'),
           p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
           col_xs_12 = $('<div class="col-xs-12"></div>'),
-          form = $('<form class="login__form"></form>'),
+          form = $('<div class="login__form"></div>'),
           i = $('<i class="fa fa-user-o"></i>'),
           input = $('<input type="text" maxlength="8" placeholder="DNI">'),
           button = $('<button id="sign-in" class="btn">Sign In</button>');
