@@ -40,17 +40,17 @@ $( _ => {
     getJSON('/api/users', (err, json) => {
         if(err){ return alert(err.message);}
         state.users = json;
-        console.log(state.users);
+        //console.log(state.users);
 
         getJSON('/api/talks', (err, json) => {
             if(err){ return alert(err.message);}
             state.talks = json;
-            console.log(state.talks);
+            //console.log(state.talks);
 
             getJSON('/api/speakers', (err, json) => {
                 if(err){ return alert(err.message);}
                 state.speakers = json;
-                console.log(state.speakers);
+                //console.log(state.speakers);
 
                 const root = $('#root');
                 render(root)
@@ -61,15 +61,15 @@ $( _ => {
 });
 const Login = (update) => {
     const container = $(`<div class="login container text-center"></div>`),
-        row = $('<div class="row"></div>'),
-        title = $('<div class="login__title col-xs-12"></div>'),
-        h1 = $('<h1>FEST_17</h1>'),
-        p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
-        col_xs_12 = $('<div class="col-xs-12"></div>'),
-        form = $('<form class="login__form"></form>'),
-        i = $('<i class="fa fa-user-o"></i>'),
-        input = $('<input placeholder="DNI">'),
-        button = $('<button id="sign-in" class="btn">Sign In</button>');
+          row = $('<div class="row"></div>'),
+          title = $('<div class="login__title col-xs-12"></div>'),
+          h1 = $('<h1>FEST_17</h1>'),
+          p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
+          col_xs_12 = $('<div class="col-xs-12"></div>'),
+          form = $('<form class="login__form"></form>'),
+          i = $('<i class="fa fa-user-o"></i>'),
+          input = $('<input type="text" maxlength="8" placeholder="DNI">'),
+          button = $('<button id="sign-in" class="btn">Sign In</button>');
 
     container.append(row);
     row.append(title, col_xs_12);
@@ -77,12 +77,16 @@ const Login = (update) => {
     col_xs_12.append(form);
     form.append(i, input);
     form.append(button);
-    
-    button.click(_ => {
-        state.screen = 1;
-        update();
-    });
 
+
+    button.click(_ => {
+        var users = state.users.filter(function (e) {
+            if(input.val().toString().length === 8  && e.id === input.val()){
+                state.screen = 1;
+                update();
+            }
+        });
+    });
     return container;
 };
 const Schedule = (update) => {
