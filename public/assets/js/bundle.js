@@ -67,7 +67,7 @@ const Login = (update) => {
         h1 = $('<h1>FEST_17</h1>'),
         p = $('<p><span>INTERCORP</span> INNOVATION FEST</p>'),
         col_xs_12 = $('<div class="col-xs-12"></div>'),
-        form = $('<form class="login__form"></form>'),
+        form = $('<div class="login__form"></div>'),
         i = $('<i class="fa fa-user-o"></i>'),
         input = $('<input placeholder="DNI">'),
         button = $('<button id="sign-in" class="btn">Sign In</button>');
@@ -200,7 +200,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_2 = $(`<div class="block pink row"></div>`),
@@ -214,7 +214,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_3 = $(`<div class="block orange row"></div>`),
@@ -228,7 +228,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_4 = $(`<div class="block lilac row"></div>`),
@@ -242,7 +242,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`);
 
@@ -255,7 +255,19 @@ const Speaker = (update) => {
 
     return mainWrap;
 };
-
+const Talks = (update) => {
+    const mainWrap = $(`<div class="main-wrap"></div>`),
+          header = $(`<header>
+                            <div class="container">
+                                <i class="fa fa-arrow-left"></i>
+                                <p>MYFEST_17</p>
+                            </div>
+                      </header>`);
+    
+    mainWrap.append(header);
+    
+    return mainWrap;
+};
 'use strict';
 
 const getJSON = (url, cb) => {

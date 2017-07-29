@@ -31,7 +31,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_2 = $(`<div class="block pink row"></div>`),
@@ -45,7 +45,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_3 = $(`<div class="block orange row"></div>`),
@@ -59,7 +59,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`),
         block_4 = $(`<div class="block lilac row"></div>`),
@@ -73,7 +73,7 @@ const Speaker = (update) => {
                                     <i class="fa fa-info"></i>
                                 </div>
                                 <div class="col-xs-6">
-                                    <button>Asistir</button>
+                                    <button class="assist-btn">Asistir</button>
                                 </div>
                            </div>`);
 
